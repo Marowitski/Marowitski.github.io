@@ -6,9 +6,9 @@ document.querySelectorAll('.region').forEach(region => {
         // Tıklanan mahalleye ait bilgiyi al
         infoContent.textContent = this.getAttribute('data-info');
 
-        // Kutucuğu tıklanan yerde göster
-        const x = event.pageX;
-        const y = event.pageY;
+        // Kutucuğu tıklanan yerde göster (clientX ve clientY kullanarak)
+        const x = event.clientX;
+        const y = event.clientY;
 
         infoBox.style.left = x + 'px';
         infoBox.style.top = y + 'px';
