@@ -2,13 +2,14 @@ document.querySelectorAll('.region').forEach(region => {
     region.addEventListener('click', function(event) {
         const infoBox = document.getElementById('infoBox');
         const infoContent = document.getElementById('infoContent');
-        
+
         // Tıklanan mahalleye ait bilgiyi al
         infoContent.textContent = this.getAttribute('data-info');
 
-        // Kutucuğu tıklanan yerde göster (clientX ve clientY kullanarak)
-        const x = event.clientX;
-        const y = event.clientY;
+        // Bilgi kutusunu butonun hemen altına yerleştir
+        const rect = this.getBoundingClientRect(); // Butonun pozisyonunu al
+        const x = rect.left + window.scrollX; // Butonun X pozisyonu
+        const y = rect.bottom + window.scrollY; // Butonun alt kısmının Y pozisyonu
 
         infoBox.style.left = x + 'px';
         infoBox.style.top = y + 'px';
