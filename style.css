@@ -4,6 +4,7 @@ body {
 
 .map {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px;
 }
@@ -13,6 +14,7 @@ body {
     background-color: lightblue;
     border: 1px solid blue;
     cursor: pointer;
+    margin: 10px;
     transition: transform 0.3s;
 }
 
@@ -23,11 +25,24 @@ body {
 .info-box {
     display: none;
     position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #fff;
     border: 1px solid #333;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.info-buttons {
+    margin-top: 10px;
+}
+
+.info-option {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.info-option:hover {
+    background-color: #ccc;
 }
