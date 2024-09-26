@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İnteraktif Harita</title>
+    <title>Sarıyer Mahalleleri</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="map">
-        <div class="region" id="region1" data-info="Bölge 1 Bilgileri">Bölge 1</div>
-        <div class="region" id="region2" data-info="Bölge 2 Bilgileri">Bölge 2</div>
-        <div class="region" id="region3" data-info="Bölge 3 Bilgileri">Bölge 3</div>
+        <div class="region" id="region1" data-info="Rumeli Hisarı">Rumeli Hisarı</div>
+        <div class="region" id="region2" data-info="Tarabya">Tarabya</div>
+        <div class="region" id="region3" data-info="İstinye">İstinye</div>
+        <div class="region" id="region4" data-info="Zekeriyaköy">Zekeriyaköy</div>
+        <div class="region" id="region5" data-info="Bahçeköy">Bahçeköy</div>
+        <!-- Diğer mahalleler için benzer kutucuklar ekleyebilirsiniz -->
     </div>
 
+    <!-- Bilgi baloncuğu -->
     <div id="infoBox" class="info-box">
         <p id="infoContent"></p>
+        <div class="info-buttons">
+            <button class="info-option">Detay 1</button>
+            <button class="info-option">Detay 2</button>
+            <button class="info-option">Detay 3</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
