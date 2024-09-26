@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.map {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.region {
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.region:hover {
+    transform: scale(1.2);
+}
+
+.info-box {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
