@@ -8,22 +8,18 @@
 </head>
 <body>
     <div class="map">
-        <div class="region" id="region1" data-info="Rumeli Hisarı">Rumeli Hisarı</div>
-        <div class="region" id="region2" data-info="Tarabya">Tarabya</div>
-        <div class="region" id="region3" data-info="İstinye">İstinye</div>
-        <div class="region" id="region4" data-info="Zekeriyaköy">Zekeriyaköy</div>
-        <div class="region" id="region5" data-info="Bahçeköy">Bahçeköy</div>
+        <div class="region" id="region1" data-info="Rumeli Hisarı" data-buttons='["Detay 1", "Detay 2", "Detay 3"]'>Rumeli Hisarı</div>
+        <div class="region" id="region2" data-info="Tarabya" data-buttons='["Bilgi 1", "Bilgi 2", "Bilgi 3"]'>Tarabya</div>
+        <div class="region" id="region3" data-info="İstinye" data-buttons='["Özellik A", "Özellik B", "Özellik C"]'>İstinye</div>
+        <div class="region" id="region4" data-info="Zekeriyaköy" data-buttons='["Seçenek 1", "Seçenek 2", "Seçenek 3"]'>Zekeriyaköy</div>
+        <div class="region" id="region5" data-info="Bahçeköy" data-buttons='["Opsiyon 1", "Opsiyon 2", "Opsiyon 3"]'>Bahçeköy</div>
         <!-- Diğer mahalleler için benzer kutucuklar ekleyebilirsiniz -->
     </div>
 
     <!-- Bilgi baloncuğu -->
     <div id="infoBox" class="info-box">
         <p id="infoContent"></p>
-        <div class="info-buttons">
-            <button class="info-option">Detay 1</button>
-            <button class="info-option">Detay 2</button>
-            <button class="info-option">Detay 3</button>
-        </div>
+        <div class="info-buttons" id="infoButtons"></div>
     </div>
 
     <script src="script.js"></script>
